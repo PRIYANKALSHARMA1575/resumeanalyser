@@ -10,12 +10,12 @@ genai.configure(api_key="AIzaSyDJa1F0ulOjuivgI-C5yifq192ZQ-jIFRQ")  # Replace wi
 model = genai.GenerativeModel('gemini-1.5-pro-latest')  # Use the latest model
 
 # Streamlit UI Configuration
-st.set_page_config(page_title="PDF Analyzer", page_icon="📄")
-st.title("📄 PDF Analyzer with Gemini AI")
-st.write("Upload a PDF, and I will analyze the content based on your query.")
+st.set_page_config(page_title="RESUME Analyzer", page_icon="📄")
+st.title("📄 RESUME Analyzer and Scorer with Gemini AI")
+st.write("Upload the RESUME and I will analyze the content based on your query.")
 
 # PDF Upload
-uploaded_file = st.file_uploader("Upload a PDF", type=["pdf"])
+uploaded_file = st.file_uploader("Upload the PDF", type=["pdf"])
 
 def extract_pdf_text(file):
     """Extract text from the uploaded PDF."""
